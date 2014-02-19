@@ -96,6 +96,20 @@
         [self.view addSubview:phone];
         [phone release],phone = nil;
 
+        //实例化一个Button
+        UIButton *delButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        delButton.frame = CGRectMake(60, 250, 200, 55);
+        delButton.tag = 333;
+        delButton.hidden = NO;
+        delButton.backgroundColor = [UIColor redColor];
+        [delButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [delButton setTitle:@"删除" forState:UIControlStateNormal];
+        [delButton addTarget:self action:@selector(delButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:delButton];
+        
+        
+        
+        
         isFlag = YES;
         
     }else{
@@ -116,6 +130,12 @@
         [phoneTxt removeFromSuperview];
         PhoneLabel.hidden = NO;
         
+//        if ([self.view viewWithTag:333].hidden == NO) {
+//            [self.view viewWithTag:333].hidden = YES;
+//        }
+        //移除删除按钮
+        [[self.view viewWithTag:333] removeFromSuperview];
+        
         isFlag = NO;
         
        //开始代理传值
@@ -126,7 +146,16 @@
         
     }
 }
+//实现删除联系人按钮功能
+-(void)delButtonAction:(UIButton *)sender{
+    //响应自定义代理方法
+    if (self.delegate &&[self.delegate respondsToSelector:@selector(didEditContactInfo:atIndexPath:)]) {
+        [self.delegate didEditContactInfo:nil atIndexPath:self.indexPath];
+    }
+    //调用
+    [self.navigationController popViewControllerAnimated:YES];
 
+}
 
 -(void)dealloc{
     [_contactItem release];

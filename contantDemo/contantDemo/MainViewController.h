@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "DetailViewController.h"
-
-@interface MainViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,DetailViewDelegate>
+//添加相关协议方法
+@interface MainViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,DetailViewDelegate,UIAlertViewDelegate>
 
 @property(nonatomic,retain)UITableView *contactTableView;
 //战士联系人列表视图
