@@ -186,7 +186,7 @@
 
 //    [alertView textFieldAtIndex:1].placeholder = @"联系人电话";
 //    [alertView textFieldAtIndex:1].secureTextEntry = NO;
-    alertView.alertViewStyle = UIAlertViewStyleDefault;//只有按钮
+//    alertView.alertViewStyle = UIAlertViewStyleDefault;//只有按钮
     
     //发送显示show消息，让弹出框显示
     [alertView show];

@@ -1,0 +1,104 @@
+2013-11-08 08:47:21.850 ChouTi[694:15203] openID = ********************(null)
+2013-11-08 08:47:22.778 ChouTi[694:15203] (null)
+2013-11-08 08:47:23.516 ChouTi[694:15203] url= https://api.weibo.com/oauth2/authorize?display=mobile&response_type=token&redirect_uri=http://hi.baidu.com/jt_one&client_id=3601604349
+[Switching to process 694 thread 0x17403]
+2013-11-08 08:47:23.624 ChouTi[694:15203] webview's url = https://api.weibo.com/oauth2/authorize?display=mobile&response_type=token&redirect_uri=http://hi.baidu.com/jt_one&client_id=3601604349
+[Switching to process 694 thread 0x16f03]
+[Switching to process 694 thread 0x15203]
+2013-11-08 08:47:39.985 ChouTi[694:15203] webview's url = https://api.weibo.com/oauth2/authorize
+2013-11-08 08:47:40.162 ChouTi[694:15203] webview's url = http://hi.baidu.com/jt_one#access_token=2.004z8c8CjoxjvD46cc1cfcfc0P6fvw&remind_in=411414&expires_in=411414&uid=2240390793
+2013-11-08 08:47:40.164 ChouTi[694:15203] q = ===================http://hi.baidu.com/jt_one#access_token=2.004z8c8CjoxjvD46cc1cfcfc0P6fvw&remind_in=411414&expires_in=411414&uid=2240390793
+2013-11-08 08:47:40.178 ChouTi[694:15203] userID = 2240390793
+2013-11-08 08:47:40.182 ChouTi[694:15203] jtone 
+
+token=2.004z8c8CjoxjvD46cc1cfcfc0P6fvw
+refreshToken=(null)
+expTime=411414
+uid=2240390793
+remindIn=411414
+
+2013-11-08 08:47:40.187 ChouTi[694:15203] jtone time = 2013-11-12 18:04:34 +0000
+2013-11-08 08:47:40.188 ChouTi[694:15203] openID = ********************(null)
+2013-11-08 08:47:40.189 ChouTi[694:15203] url=https://api.weibo.com/2/account/get_uid.json?access_token=2.004z8c8CjoxjvD46cc1cfcfc0P6fvw
+2013-11-08 08:47:40.292 ChouTi[694:15203] responseString = {"uid":2240390793}
+2013-11-08 08:47:40.293 ChouTi[694:15203] userinfo = ***************{
+    uid = 2240390793;
+}
+2013-11-08 08:47:40.294 ChouTi[694:15203] login: userinfo = {
+    uid = 2240390793;
+}
+2013-11-08 08:47:40.295 ChouTi[694:15203] userID = 2240390793
+2013-11-08 08:47:40.300 ChouTi[694:15203] url=https://api.weibo.com/2/users/show.json?uid=2240390793&access_token=2.004z8c8CjoxjvD46cc1cfcfc0P6fvw
+2013-11-08 08:47:40.335 ChouTi[694:15203] responseString = {"id":2240390793,"idstr":"2240390793","class":1,"screen_name":"风居住的街道lhh","name":"风居住的街道lhh","province":"41","city":"1","location":"河南 郑州","description":"青春不需要哗众取宠！","url":"","profile_image_url":"http://tp2.sinaimg.cn/2240390793/50/5658242553/0","profile_url":"u/2240390793","domain":"","weihao":"","gender":"f","followers_count":32,"friends_count":165,"statuses_count":380,"favourites_count":767,"created_at":"Mon Jul 11 19:06:53 +0800 2011","following":false,"allow_all_act_msg":false,"geo_enabled":true,"verified":false,"verified_type":-1,"remark":"","status":{"created_at":"Tue Nov 05 19:01:37 +0800 2013","id":3641351432647456,"mid":"3641351432647456","idstr":"3641351432647456","text":"看看什么才叫做诚信经营! (@P爱死) http://t.cn/zR0lnhJ (分享自@抽屉新热榜)","source":"<a href=\"http://app.weibo.com/t/feed/2Xa3FO\" rel=\"nofollow\">抽屉新热榜</a>","favorited":false,"truncated":false,"in_reply_to_status_id":"","in_reply_to_user_id":"","in_reply_to_screen_name":"","pic_urls":[{"thumbnail_pic":"http://ww2.sinaimg.cn/thumbnail/8589a689jw1eaacjo5h2hj20dh0j6ach.jpg"}],"thumbnail_pic":"http://ww2.sinaimg.cn/thumbnail/8589a689jw1eaacjo5h2hj20dh0j6ach.jpg","bmiddle_pic":"http://ww2.sinaimg.cn/bmiddle/8589a689jw1eaacjo5h2hj20dh0j6ach.jpg","original_pic":"http://ww2.sinaimg.cn/large/8589a689jw1eaacjo5h2hj20dh0j6ach.jpg","geo":null,"reposts_count":0,"comments_count":0,"attitudes_count":0,"mlevel":0,"visible":{"type":0,"list_id":0}},"ptype":0,"allow_all_comment":false,"avatar_large":"http://tp2.sinaimg.cn/2240390793/180/5658242553/0","avatar_hd":"http://tp2.sinaimg.cn/2240390793/180/5658242553/0","verified_reason":"","follow_me":false,"online_status":0,"bi_followers_count":12,"lang":"zh-cn","star":0,"mbtype":0,"mbrank":0,"block_word":0}
+2013-11-08 08:47:40.338 ChouTi[694:15203] userinfo = ***************{
+    "allow_all_act_msg" = 0;
+    "allow_all_comment" = 0;
+    "avatar_hd" = "http://tp2.sinaimg.cn/2240390793/180/5658242553/0";
+    "avatar_large" = "http://tp2.sinaimg.cn/2240390793/180/5658242553/0";
+    "bi_followers_count" = 12;
+    "block_word" = 0;
+    city = 1;
+    class = 1;
+    "created_at" = "Mon Jul 11 19:06:53 +0800 2011";
+    description = "\U9752\U6625\U4e0d\U9700\U8981\U54d7\U4f17\U53d6\U5ba0\Uff01";
+    domain = "";
+    "favourites_count" = 767;
+    "follow_me" = 0;
+    "followers_count" = 32;
+    following = 0;
+    "friends_count" = 165;
+    gender = f;
+    "geo_enabled" = 1;
+    id = 2240390793;
+    idstr = 2240390793;
+    lang = "zh-cn";
+    location = "\U6cb3\U5357 \U90d1\U5dde";
+    mbrank = 0;
+    mbtype = 0;
+    name = "\U98ce\U5c45\U4f4f\U7684\U8857\U9053lhh";
+    "online_status" = 0;
+    "profile_image_url" = "http://tp2.sinaimg.cn/2240390793/50/5658242553/0";
+    "profile_url" = "u/2240390793";
+    province = 41;
+    ptype = 0;
+    remark = "";
+    "screen_name" = "\U98ce\U5c45\U4f4f\U7684\U8857\U9053lhh";
+    star = 0;
+    status =     {
+        "attitudes_count" = 0;
+        "bmiddle_pic" = "http://ww2.sinaimg.cn/bmiddle/8589a689jw1eaacjo5h2hj20dh0j6ach.jpg";
+        "comments_count" = 0;
+        "created_at" = "Tue Nov 05 19:01:37 +0800 2013";
+        favorited = 0;
+        geo = "<null>";
+        id = 3641351432647456;
+        idstr = 3641351432647456;
+        "in_reply_to_screen_name" = "";
+        "in_reply_to_status_id" = "";
+        "in_reply_to_user_id" = "";
+        mid = 3641351432647456;
+        mlevel = 0;
+        "original_pic" = "http://ww2.sinaimg.cn/large/8589a689jw1eaacjo5h2hj20dh0j6ach.jpg";
+        "pic_urls" =         (
+                        {
+                "thumbnail_pic" = "http://ww2.sinaimg.cn/thumbnail/8589a689jw1eaacjo5h2hj20dh0j6ach.jpg";
+            }
+        );
+        "reposts_count" = 0;
+        source = "<a href=\"http://app.weibo.com/t/feed/2Xa3FO\" rel=\"nofollow\">\U62bd\U5c49\U65b0\U70ed\U699c</a>";
+        text = "\U770b\U770b\U4ec0\U4e48\U624d\U53eb\U505a\U8bda\U4fe1\U7ecf\U8425! (@P\U7231\U6b7b) http://t.cn/zR0lnhJ (\U5206\U4eab\U81ea@\U62bd\U5c49\U65b0\U70ed\U699c)";
+        "thumbnail_pic" = "http://ww2.sinaimg.cn/thumbnail/8589a689jw1eaacjo5h2hj20dh0j6ach.jpg";
+        truncated = 0;
+        visible =         {
+            "list_id" = 0;
+            type = 0;
+        };
+    };
+    "statuses_count" = 380;
+    url = "";
+    verified = 0;
+    "verified_reason" = "";
+    "verified_type" = "-1";
+    weihao = "";
+}
+2013-11-08 08:47:40.347 ChouTi[694:15203] userInfo = 风居住的街道lhh
