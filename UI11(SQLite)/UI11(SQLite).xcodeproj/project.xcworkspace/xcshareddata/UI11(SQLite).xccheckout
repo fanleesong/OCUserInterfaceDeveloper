@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>594A37E4-6991-415B-B3CC-BEBED45E6C35</string>
+	<key>IDESourceControlProjectName</key>
+	<string>UI11(SQLite)</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1E620B7A-D138-4390-89C4-3BFD6EA6D1D5</key>
+		<string>https://github.com/fanleesong/ContactInfoDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>UI11(SQLite)/UI11(SQLite).xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1E620B7A-D138-4390-89C4-3BFD6EA6D1D5</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/fanleesong/ContactInfoDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1E620B7A-D138-4390-89C4-3BFD6EA6D1D5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1E620B7A-D138-4390-89C4-3BFD6EA6D1D5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OCUserInterfaceDeveloper</string>
+		</dict>
+	</array>
+</dict>
+</plist>
