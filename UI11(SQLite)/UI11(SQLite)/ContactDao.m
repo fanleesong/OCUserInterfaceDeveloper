@@ -48,4 +48,89 @@
     return  contactlist;
 }
 
+/*
+    if (sqlite3_exec(dataBase, "insert into ContactInfo values();", nil, nil, nil)== SQLITE_OK) {
+
+        sqlite3_bind_text(statements, 1, [contactInfo.username UTF8String], -1, nil);
+        sqlite3_bind_text(statements, 2, [contactInfo.password UTF8String], -1, nil);
+        sqlite3_bind_text(statements, 3, [contactInfo.contactNum UTF8String], -1, nil);
+
+    }
+ */
++(BOOL)insertContactInfo:(ContactInfo *)contactInfo{
+
+    //打开数据库
+    sqlite3 *dataBase = [DataBase openDataBase];
+    
+    //实例化
+    sqlite3_stmt *statements = nil;
+    //执行SQL语句
+    if (sqlite3_prepare_v2(dataBase, "insert into ContactInfo values(?,?,?)", -1, &statements, nil) == SQLITE_OK) {
+        
+        //绑定对应列数据的占位置的数据
+        //方法中第二个参数，指的是在该参数在数据库中的计数单位以1开始，按顺序分别处理占位符的数据参数值的传递
+        sqlite3_bind_text(statements, 1, [contactInfo.username UTF8String], -1, nil);
+        sqlite3_bind_text(statements, 2, [contactInfo.password UTF8String], -1, nil);
+        sqlite3_bind_text(statements, 3, [contactInfo.contactNum UTF8String], -1, nil);
+        
+        if (sqlite3_step(statements) == SQLITE_DONE) {
+            sqlite3_finalize(statements);
+            [DataBase closeDataBase];
+            return YES;
+        }
+        
+    }
+    sqlite3_finalize(statements);
+    [DataBase closeDataBase];
+    return NO;
+
+}
++(void)deleteContactInfo:(ContactInfo *)contactInfo{
+
+    sqlite3 *dataBase = [DataBase openDataBase];
+    
+    sqlite3_stmt *statement = nil;
+    if (sqlite3_prepare_v2(dataBase,[[NSString stringWithFormat:@"delete from ContactInfo where contactNum='%@';",contactInfo.contactNum] UTF8String],-1, &statement, nil) == SQLITE_OK) {
+        
+        if(sqlite3_step(statement)==SQLITE_DONE){
+            sqlite3_finalize(statement);
+            [DataBase closeDataBase];
+        }
+        
+    }
+    
+    sqlite3_finalize(statement);
+    [DataBase closeDataBase];
+
+    
+
+}
+
++(void)updateContactInfo:(ContactInfo *)contactInfo{
+
+
+    sqlite3 *dataBase = [DataBase openDataBase];
+    
+    sqlite3_stmt *statements = nil;
+    if (sqlite3_prepare_v2(dataBase,[[NSString stringWithFormat:@"update set username=?,password=?,ContactNum=? from ContactInfo where contactNum=?"] UTF8String],-1, &statements, nil) == SQLITE_OK) {
+        
+        sqlite3_bind_text(statements, 1, [contactInfo.username UTF8String], -1, nil);
+        sqlite3_bind_text(statements, 2, [contactInfo.password UTF8String], -1, nil);
+        sqlite3_bind_text(statements, 3, [contactInfo.contactNum UTF8String], -1, nil);
+
+        
+            sqlite3_step(statements);
+            sqlite3_finalize(statements);
+            [DataBase closeDataBase];
+        
+    }
+    
+    sqlite3_finalize(statements);
+    [DataBase closeDataBase];
+
+
+}
+
+
+
 @end

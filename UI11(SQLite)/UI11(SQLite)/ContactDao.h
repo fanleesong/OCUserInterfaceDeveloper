@@ -14,11 +14,12 @@
 
 //查询所有
 +(NSMutableArray *)selAllContactInfo;
-////增加数据
-//+(void)saveContactInfo:(ContactInfo *)contactInfo;
-////删除联系人
-//+(void)delContactInfo:(ContactInfo *)contactInfo;
-////修改
-//+(void)editContactInfo:(ContactInfo *)contactInfo;
+//添加数据
++(BOOL)insertContactInfo:(ContactInfo *)contactInfo;
+//删除
++(void)deleteContactInfo:(ContactInfo *)contactInfo;
+//更新
++(void)updateContactInfo:(ContactInfo *)contactInfo;
+
 
 @end

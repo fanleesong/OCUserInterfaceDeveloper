@@ -50,6 +50,7 @@ static sqlite3 *dataBasePoniter = nil;
 
     if (dataBasePoniter !=nil) {
         sqlite3_close(dataBasePoniter);
+        dataBasePoniter = nil;
     }
 
 

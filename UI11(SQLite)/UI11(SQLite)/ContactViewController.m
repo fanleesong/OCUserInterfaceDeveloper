@@ -9,6 +9,7 @@
 #import "ContactViewController.h"
 #import "ContactDao.h"
 #import "ContactInfo.h"
+#import "AddContactViewController.h"
 
 @interface ContactViewController ()
 
@@ -37,6 +38,8 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addContactInfoAction:)] autorelease];
+    
     //接收ContactDao中的查询数据库中的ContactInfo表中的所有数据，有数据源接收
     self.contactlist = [ContactDao selAllContactInfo];
     
@@ -46,6 +49,25 @@
     
     
     
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+
+    [super viewDidAppear:animated];
+    
+    NSLog(@"%s",__FUNCTION__);
+    self.contactlist =[ContactDao selAllContactInfo];
+    [self.tableView reloadData];
+
+
+}
+-(void)addContactInfoAction:(UIBarButtonItem *)sender{
+
+
+    AddContactViewController *add = [[AddContactViewController alloc]init];
+    [self.navigationController pushViewController:add animated:YES];
+    [add release], add = nil;
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -83,28 +105,43 @@
     return cell;
 }
 
-/*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-*/
 
-/*
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    return UITableViewCellEditingStyleDelete;
+
+}
+
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        
+        ContactInfo *contacs = [self.contactlist objectAtIndex: indexPath.row];
+        
+        [ContactDao deleteContactInfo:contacs];
+        
+        self.contactlist = [ContactDao selAllContactInfo];
+        [self.contactlist removeObjectAtIndex:indexPath.row];
+        
         // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
+        
+    }
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
+ 
+
 
 /*
 // Override to support rearranging the table view.

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		177A992518BAE2D300D2BE51 /* AddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 177A992418BAE2D300D2BE51 /* AddContactViewController.m */; };
 		17E0329A18B72E65008348F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E0329918B72E65008348F5 /* Foundation.framework */; };
 		17E0329C18B72E65008348F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E0329B18B72E65008348F5 /* CoreGraphics.framework */; };
 		17E0329E18B72E65008348F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E0329D18B72E65008348F5 /* UIKit.framework */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		177A992318BAE2D300D2BE51 /* AddContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddContactViewController.h; sourceTree = "<group>"; };
+		177A992418BAE2D300D2BE51 /* AddContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddContactViewController.m; sourceTree = "<group>"; };
 		17E0329618B72E65008348F5 /* UI11(SQLite).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI11(SQLite).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17E0329918B72E65008348F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		17E0329B18B72E65008348F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -132,6 +135,8 @@
 				17E032CB18B72FFB008348F5 /* DataBase.m */,
 				17E032D118B73BF7008348F5 /* ContactDao.h */,
 				17E032D218B73BF7008348F5 /* ContactDao.m */,
+				177A992318BAE2D300D2BE51 /* AddContactViewController.h */,
+				177A992418BAE2D300D2BE51 /* AddContactViewController.m */,
 				17E032D418B74B2C008348F5 /* ContactViewController.h */,
 				17E032D518B74B2C008348F5 /* ContactViewController.m */,
 				17E032CD18B7389D008348F5 /* ContactInfo.h */,
@@ -267,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				177A992518BAE2D300D2BE51 /* AddContactViewController.m in Sources */,
 				17E032CF18B7389D008348F5 /* ContactInfo.m in Sources */,
 				17E032D618B74B2C008348F5 /* ContactViewController.m in Sources */,
 				17E032AA18B72E65008348F5 /* AppDelegate.m in Sources */,
@@ -473,6 +479,7 @@
 				17E032C418B72E65008348F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17E032C518B72E65008348F5 /* Build configuration list for PBXNativeTarget "UI11(SQLite)Tests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +488,7 @@
 				17E032C718B72E65008348F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
