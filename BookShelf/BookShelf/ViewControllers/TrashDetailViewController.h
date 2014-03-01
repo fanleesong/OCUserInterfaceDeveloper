@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BookInfo.h"
 
 @interface TrashDetailViewController : UIViewController
+
+@property (nonatomic,retain) BookInfo *trashBookDetail;
 
 @end

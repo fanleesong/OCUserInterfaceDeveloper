@@ -11,6 +11,7 @@
 #import "BookDetailViewController.h"
 #import "BookTrashViewController.h"
 #import "BookItemCell.h"
+#import "DataBaseManager.h"
 
 @interface BookShelfViewController ()
 {
@@ -31,6 +32,29 @@
     return self;
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+
+    [super viewWillAppear:animated];
+    
+    NSString *Category = [[NSUserDefaults standardUserDefaults] objectForKey:@"firstCategory"];
+    if ([Category isEqualToString:@"全部"] || Category == nil) {
+        
+        //显示书架书籍
+        self.bookItemListArray  = [DataBaseManager findAllBookItemInfo:YES];
+
+    }else{
+    
+        //显示书架书籍
+        self.bookItemListArray  = [DataBaseManager findAllBookItemInfo:Category isShow:YES];
+
+    }
+    
+    
+    [self.tableView reloadData];
+
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -41,7 +65,10 @@
     [self _initTableView];
     //调用toolbar方法
     [self _initToolBar];
-
+    
+    [DataBaseManager openDataBase];
+    
+    [DataBaseManager insertOneBookItemWithBooKInfo:[[BookInfo alloc] initWithBookID:78 bookName:@"C语言教程(第一版)" bookPrice:@"23" bookCategory:@"数据库" bookAvatar:[UIImage imageNamed:@"hihi.png"]]];
     
     
     
@@ -59,14 +86,12 @@
 }
 #pragma mark--实现代理方法 dataSource & delegate--
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-#warning 测试数据
 
 
-    return 100;
+    return self.bookItemListArray.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-#warning 测试数据
     
     static NSString *CellIndentifier = @"cell";
     
@@ -77,10 +102,19 @@
         cell = [[[BookItemCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIndentifier] autorelease];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-    cell.bookNameLabel.text = @"C语言基础教程第一版";
-    cell.bookPriceLabel.text = @"78.9";
-    cell.bookCatagoryLabel.text =@"计算机与科学";
-    cell.bookAvatarImageView.image = [UIImage imageNamed:@"hihi.png"];
+    
+    BookInfo *books = [self.bookItemListArray objectAtIndex:indexPath.row];
+//    NSLog(@"%@",books);
+    cell.bookNameLabel.text = books.bookName;
+    cell.bookPriceLabel.text = books.bookPrice;
+    cell.bookCatagoryLabel.text = books.bookCategory;
+    cell.bookAvatarImageView.image = books.bookAvatar;
+    
+    
+//    cell.bookNameLabel.text = @"C语言基础教程第一版";
+//    cell.bookPriceLabel.text = @"78.9";
+//    cell.bookCatagoryLabel.text =@"计算机与科学";
+//    cell.bookAvatarImageView.image = [UIImage imageNamed:@"hihi.png"];
     
     
     return cell;
@@ -132,6 +166,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
     BookDetailViewController *detail = [[BookDetailViewController alloc] init];
+    detail.bookDetailInfo = [self.bookItemListArray objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:detail animated:YES];
     [detail release],detail = nil;
 
@@ -145,6 +180,9 @@
     
     //实例化分类视图控制器
     CategoryViewController *category = [[CategoryViewController alloc] init];
+    
+    category.isWhichMark = 1;
+    
     //实例化导航视图
     UINavigationController *navigationByCategory = [[UINavigationController alloc] initWithRootViewController:category];
     //调用presentViewController:animated:completion:方法，就是模态视图
@@ -179,6 +217,23 @@
     [[self.view viewWithTag:120] removeFromSuperview];
     //切换到书架时在对该导航控制器释放
     [_rootVC release],_rootVC = nil;
+    
+//TODO:待完善
+    
+    NSString *Category = [[NSUserDefaults standardUserDefaults] objectForKey:@"firstCategory"];
+    if ([Category isEqualToString:@"全部"] || Category == nil) {
+        
+        //显示书架书籍
+        self.bookItemListArray  = [DataBaseManager findAllBookItemInfo:YES];
+        
+    }else{
+        
+        //显示书架书籍
+        self.bookItemListArray  = [DataBaseManager findAllBookItemInfo:Category isShow:YES];
+        
+    }
+    
+    [self.tableView reloadData];
 
 
 }
@@ -210,7 +265,29 @@
 
 
 }
+#pragma mark-实现编辑单元格代理方法-
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
 
+
+    return YES;
+}
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    return UITableViewCellEditingStyleDelete;
+}
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+
+        BookInfo *isShowBook = [self.bookItemListArray objectAtIndex:indexPath.row];
+        isShowBook.isStatus = NO;
+        [DataBaseManager updateOneBookItemWithBookInfo:isShowBook];
+        [self.bookItemListArray removeObjectAtIndex:indexPath.row];
+
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
+
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

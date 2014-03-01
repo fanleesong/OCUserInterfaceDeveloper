@@ -12,5 +12,6 @@
 
 @property(nonatomic,retain) UITableView *tableView;
 @property(nonatomic,retain) NSMutableArray *categoryListArray;
+@property(nonatomic,assign) NSInteger isWhichMark;//判断当前处于哪个页面
 
 @end

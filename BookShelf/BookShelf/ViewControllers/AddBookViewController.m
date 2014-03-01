@@ -8,6 +8,8 @@
 
 #import "AddBookViewController.h"
 #import "CategoryViewController.h"
+#import "DataBaseManager.h"
+#import "BookInfo.h"
 
 @interface AddBookViewController ()
 
@@ -36,6 +38,12 @@
         self.title = @"添加书籍";
     }
     return self;
+}
+-(void)viewWillAppear:(BOOL)animated{
+
+    [super viewWillAppear:animated];
+    self.bookCategoryLabel.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"Category"];
+
 }
 
 - (void)viewDidLoad
@@ -82,9 +90,9 @@
     
     //TODO:测试数据
     
-    self.bookCategoryLabel.text = @"数据库";
-    self.bookNameTextField.text = @"OC编程入门";
-    self.bookPriceTextField.text = @"78.3";
+//    self.bookCategoryLabel.text = @"数据库";
+//    self.bookNameTextField.text = @"OC编程入门";
+//    self.bookPriceTextField.text = @"78.3";
     
 
 
@@ -130,6 +138,14 @@
 -(void)handleDidAction:(UIBarButtonItem *)sender{
     
     
+    self.bookCategoryLabel.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"Category"];
+    [[NSUserDefaults standardUserDefaults] objectForKey:@"firstCategory"];
+    //插入数据
+    BookInfo *newBookInfo = [[BookInfo alloc] initWithBookID:(arc4random()%55555) bookName:self.bookNameTextField.text bookPrice:self.bookPriceTextField.text bookCategory:self.bookCategoryLabel.text bookAvatar:[UIImage imageNamed:@"hihi.png"]];
+    [DataBaseManager insertOneBookItemWithBooKInfo:newBookInfo];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    [newBookInfo release],newBookInfo = nil;
     
     
     

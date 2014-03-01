@@ -10,12 +10,15 @@
 
 @interface CategoryViewController ()
 
+@property(nonatomic,retain) NSIndexPath *selectedIndexPath;
+
 @end
 
 @implementation CategoryViewController
 -(void)dealloc{
 
     [_categoryListArray release];
+    [_selectedIndexPath release];
     [_tableView release];
     [super dealloc];
     
@@ -29,6 +32,21 @@
         self.title = @"书籍分类";
     }
     return self;
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    
+    NSString *category = [[NSUserDefaults standardUserDefaults] objectForKey:@"firstCategory"];
+    NSInteger index = 0;
+    index = [self.categoryListArray indexOfObject:category];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:0];
+    
+    self.selectedIndexPath = indexPath;
+    
+    [self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
+    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+    cell.accessoryType = UITableViewCellAccessoryCheckmark;
+
 }
 
 - (void)viewDidLoad
@@ -72,6 +90,13 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIndentfier] autorelease];
         
     }
+    
+    if ([self.selectedIndexPath isEqual:indexPath]) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }else{
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    
     cell.textLabel.text = [self.categoryListArray objectAtIndex:indexPath.row];
     
     return cell;
@@ -80,13 +105,20 @@
 //选中单元格方法
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
+    //接收选中indexPath值
+    self.selectedIndexPath = indexPath;
+    
+    
     //获取所选行，并设置acessary
     ((UITableViewCell *)[tableView cellForRowAtIndexPath:indexPath]).accessoryType = UITableViewCellAccessoryCheckmark;
+    
 
 }
 //选中下一个单元格时，之前被选中的单元格会返回到初始状态
 -(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
 
+    
+    //TODO:
     //获取所选行，并设置acessary
     ((UITableViewCell *)[tableView cellForRowAtIndexPath:indexPath]).accessoryType = UITableViewCellAccessoryNone;
 
@@ -116,10 +148,25 @@
 }
 //实现完成按钮功能
 -(void)handleDidAction:(UIBarButtonItem *)sender{
+    
+    NSString *category = [self.categoryListArray objectAtIndex:self.selectedIndexPath.row];
+    //判断所处界面
+    if (self.isWhichMark == 1) {
+        
+        [[NSUserDefaults standardUserDefaults] setObject:category forKey:@"firstCategory"];
+        
+    }else{
+        
+        //持久化数据到本地
+        [[NSUserDefaults standardUserDefaults] setObject:category forKey:@"Category"];
+        
+    }
+    
+    //调用同步方法同步数据
+    [[NSUserDefaults standardUserDefaults] synchronize];
 
-
-
-
+    //撤销视图
+    [self dismissViewControllerAnimated:YES completion:nil];
 
 }
 

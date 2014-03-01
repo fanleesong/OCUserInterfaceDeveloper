@@ -7,6 +7,7 @@
 //
 
 #import "TrashDetailViewController.h"
+#import "DataBaseManager.h"
 
 @interface TrashDetailViewController ()
 
@@ -24,6 +25,8 @@
     [_bookCategoryLabel release];
     [_bookPriceTextField release];
     [_bookNameTextField release];
+    [_trashBookDetail release];
+    
     [super dealloc];
     
 }
@@ -53,7 +56,8 @@
     
     //图片
     UIImageView *bookAvatar = [[UIImageView alloc] initWithFrame:CGRectMake(5, 74,100 ,100 )];
-    bookAvatar.image = [UIImage imageNamed:@"hihi.png"];
+    bookAvatar.image = self.trashBookDetail.bookAvatar
+    ;
     [self.view addSubview:bookAvatar];
     [bookAvatar release],bookAvatar = nil;
     
@@ -96,20 +100,27 @@
     
     //TODO:测试数据
     
-    self.bookCategoryLabel.text = @"数据库";
-    self.bookNameTextField.text = @"OC编程入门";
-    self.bookPriceTextField.text = @"78.3";
+    self.bookCategoryLabel.text = self.trashBookDetail.bookCategory;
+    self.bookNameTextField.text = self.trashBookDetail.bookName;
+    self.bookPriceTextField.text = self.trashBookDetail.bookPrice;
     
     
     
 }
 #pragma mark-undoBackAction-
 -(void)undoBackAction:(UIButton *)sender{
-
+    NSLog(@"%s",__FUNCTION__);
+    //放回书架
+    self.trashBookDetail.isStatus = YES;
+    [DataBaseManager updateOneBookItemWithBookInfo:self.trashBookDetail];
+    [self.navigationController popViewControllerAnimated:YES];
+    
 
 }
 -(void)deleteBookAction:(UIButton *)sender{
-
+    //彻底删除
+    [DataBaseManager deleteOneBookItemWithBookInfo:self.trashBookDetail];
+    [self.navigationController popViewControllerAnimated:YES];
 
 
 }

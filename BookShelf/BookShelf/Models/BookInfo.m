@@ -10,4 +10,29 @@
 
 @implementation BookInfo
 
+-(void)dealloc{
+    
+    [_bookAvatar release];
+    [_bookName release];
+    [_bookPrice release];
+    [_bookCategory release];
+    [super dealloc];
+
+}
+
+
+-(id)initWithBookID:(NSInteger)bookID bookName:(NSString *)bookName bookPrice:(NSString *)bookPrice bookCategory:(NSString *)bookCategory bookAvatar:(UIImage *)bookAvatar{
+
+    if (self = [super init]) {
+        self.bookCategory = bookCategory;
+        self.bookID = bookID;
+        self.bookName = bookName;
+        self.bookPrice = bookPrice;
+        self.bookAvatar = bookAvatar;
+        self.isStatus = YES;
+    }
+
+    return self;
+}
+
 @end

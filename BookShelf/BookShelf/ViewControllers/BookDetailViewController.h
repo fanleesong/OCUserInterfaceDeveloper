@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BookInfo.h"
 
 @interface BookDetailViewController : UIViewController
+
+@property (nonatomic,retain) BookInfo *bookDetailInfo;
 
 @end

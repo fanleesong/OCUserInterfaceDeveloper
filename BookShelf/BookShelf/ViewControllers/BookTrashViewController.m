@@ -9,6 +9,8 @@
 #import "BookTrashViewController.h"
 #import "BookItemCell.h"
 #import "TrashDetailViewController.h"
+#import "BookInfo.h"
+#import "DataBaseManager.h"
 
 @interface BookTrashViewController ()
 
@@ -29,6 +31,10 @@
 -(void)viewWillAppear:(BOOL)animated{
 
     [super viewWillAppear:animated];
+    
+    self.bookItemListArray = [DataBaseManager findAllBookItemInfo:NO];
+    [self.tableView reloadData];
+
     [[self.navigationController.view.superview.subviews lastObject] setHidden:NO];
 
 }
@@ -57,7 +63,7 @@
 #warning 测试数据
     
     
-    return 3;
+    return self.bookItemListArray.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -72,11 +78,13 @@
         cell = [[[BookItemCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIndentifier] autorelease];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-    cell.bookNameLabel.text = @"OC语言基础教程第一版";
-    cell.bookPriceLabel.text = @"78.9";
-    cell.bookCatagoryLabel.text =@"计算机与科学";
-    cell.bookAvatarImageView.image = [UIImage imageNamed:@"hihi.png"];
     
+    BookInfo *show = [self.bookItemListArray objectAtIndex:indexPath.row];
+    
+    cell.bookNameLabel.text = show.bookName;
+    cell.bookPriceLabel.text = show.bookPrice;
+    cell.bookCatagoryLabel.text = show.bookCategory;
+    cell.bookAvatarImageView.image = [UIImage imageNamed:@"hihi.png"];
     
     return cell;
     
@@ -91,6 +99,8 @@
     [[self.navigationController.view.superview.subviews lastObject] setHidden:YES];
 
     TrashDetailViewController *trashBook = [[TrashDetailViewController alloc] init];
+    //传递值
+    trashBook.trashBookDetail = [self.bookItemListArray objectAtIndex:indexPath.row];
     
     [self.navigationController pushViewController:trashBook animated:YES];
     [trashBook release],trashBook = nil;

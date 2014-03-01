@@ -8,6 +8,7 @@
 
 #import "BookDetailViewController.h"
 #import "CategoryViewController.h"
+#import "DataBaseManager.h"
 
 @interface BookDetailViewController ()
 
@@ -24,6 +25,7 @@
     [_bookCategoryLabel release];
     [_bookPriceTextField release];
     [_bookNameTextField release];
+    [_bookDetailInfo release];
     [super dealloc];
     
 }
@@ -38,6 +40,14 @@
     return self;
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+
+    [super viewWillAppear:animated];
+    if (self.editing) {
+        self.bookCategoryLabel.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"Category"];
+    }
+
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -56,15 +66,22 @@
     [super setEditing:editing animated:animated];
     
     if (editing) {
-//        self.editButtonItem.title = @"Done";
+//self.bookCategoryLabel.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"Category"];
         self.bookPriceTextField.userInteractionEnabled = YES;
         self.bookNameTextField.userInteractionEnabled = YES;
         self.bookCategoryLabel.userInteractionEnabled = YES;
         //添加书籍名称变为第一响应者
         [self.bookNameTextField becomeFirstResponder];
+        
     }else{
-//        self.editButtonItem.title = @"Edit";
-    
+
+//        self.bookCategoryLabel.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"Category"];
+        //获取最新编辑数据
+        self.bookDetailInfo.bookName = self.bookNameTextField.text;
+        self.bookDetailInfo.bookPrice  = self.bookPriceTextField.text;
+        self.bookDetailInfo.bookCategory = self.bookCategoryLabel.text;
+        //更新数据库
+        [DataBaseManager updateOneBookItemWithBookInfo:self.bookDetailInfo];
         self.bookPriceTextField.userInteractionEnabled = NO;
         self.bookNameTextField.userInteractionEnabled = NO;
         self.bookCategoryLabel.userInteractionEnabled = NO;
@@ -80,7 +97,7 @@
     
     //图片
     UIImageView *bookAvatar = [[UIImageView alloc] initWithFrame:CGRectMake(5, 74,100 ,100 )];
-    bookAvatar.image = [UIImage imageNamed:@"hihi.png"];
+    bookAvatar.image = self.bookDetailInfo.bookAvatar;
     [self.view addSubview:bookAvatar];
     [bookAvatar release],bookAvatar = nil;
     
@@ -107,13 +124,9 @@
     self.bookPriceTextField.userInteractionEnabled = NO;
     [self.view addSubview:self.bookPriceTextField];
     
-#warning 测试数据
-    
-    //TODO:测试数据
-    
-    self.bookCategoryLabel.text = @"数据库";
-    self.bookNameTextField.text = @"OC编程入门";
-    self.bookPriceTextField.text = @"78.3";
+    self.bookCategoryLabel.text = self.bookDetailInfo.bookCategory;
+    self.bookNameTextField.text = self.bookDetailInfo.bookName;
+    self.bookPriceTextField.text = self.bookDetailInfo.bookPrice;
     
     
     
