@@ -18,6 +18,8 @@
 @property(nonatomic,retain) NSMutableArray *newsListArray;//提供数据源数组
 @property (nonatomic,retain) BJHeaderScrollView *headerScrollView;
 
+-(void)_aquireWebDataWithParams;
+
 @end
 
 @implementation BJNewsViewController
@@ -41,10 +43,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //调用初始化
+    [self _aquireWebDataWithParams];
+
+}
+-(void)_aquireWebDataWithParams{
+
     /*
      date=20131129&startRecord=1&len=5&udid=1234567890&terminalType=Iphone&cid=213
      */
-
+    
     //实例化参数字典
     NSMutableDictionary *pramasDic = [NSMutableDictionary dictionary];
     [pramasDic setObject:@"20131129" forKey:@"date"];
@@ -53,7 +61,7 @@
     [pramasDic setObject:@"1234567890" forKey:@"udid"];
     [pramasDic setObject:@"Iphone" forKey:@"terminalType"];
     [pramasDic setObject:@"213" forKey:@"cid"];
-
+    
     BJNewsRequest *request = [[BJNewsRequest alloc]init];
     request.delegate = self;
     [request startAcquireInfoWithParamsDictionary:pramasDic];
@@ -66,6 +74,7 @@
     [headerView release],headerView = nil;
 
 }
+
 
 #pragma mark - BJNewsRequestDelegate-
 -(void)request:(BJNewsRequest *)request didFinishLoadingWithInfo:(id)info{
