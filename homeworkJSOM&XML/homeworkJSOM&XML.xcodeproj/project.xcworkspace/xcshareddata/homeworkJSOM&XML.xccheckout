@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D4B24CFA-8371-40E5-8394-88EEBD46138C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>homeworkJSOM&amp;XML</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D22EE1A9-1DA2-4986-BD73-5BCFE49193C4</key>
+		<string>https://github.com/fanleesong/ContactInfoDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>homeworkJSOM&amp;XML/homeworkJSOM&amp;XML.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D22EE1A9-1DA2-4986-BD73-5BCFE49193C4</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/fanleesong/ContactInfoDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D22EE1A9-1DA2-4986-BD73-5BCFE49193C4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D22EE1A9-1DA2-4986-BD73-5BCFE49193C4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OCUserInterfaceDeveloper</string>
+		</dict>
+	</array>
+</dict>
+</plist>

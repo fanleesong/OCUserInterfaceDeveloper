@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>F01E7D03-B5B9-480E-A4EA-DD0F686CEC6E</string>
+	<string>0FD3B0BE-1EFE-4CE7-BD10-DEA74A2022AA</string>
 	<key>IDESourceControlProjectName</key>
 	<string>BookManager</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>1E620B7A-D138-4390-89C4-3BFD6EA6D1D5</key>
+		<key>FD6D397F-D614-416A-BE06-6C588887517B</key>
 		<string>https://github.com/fanleesong/ContactInfoDemo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>BookManager/BookManager.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>1E620B7A-D138-4390-89C4-3BFD6EA6D1D5</key>
+		<key>FD6D397F-D614-416A-BE06-6C588887517B</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>1E620B7A-D138-4390-89C4-3BFD6EA6D1D5</string>
+	<string>FD6D397F-D614-416A-BE06-6C588887517B</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>1E620B7A-D138-4390-89C4-3BFD6EA6D1D5</string>
+			<string>FD6D397F-D614-416A-BE06-6C588887517B</string>
 			<key>IDESourceControlWCCName</key>
 			<string>OCUserInterfaceDeveloper</string>
 		</dict>

@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1726685618C01AE80099647E /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1726685318C01AE80099647E /* libWeiboSDK.a */; };
+		1726685718C01AE80099647E /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1726685418C01AE80099647E /* WeiboSDK.bundle */; };
+		17CEABF218BF21A50038160A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17CEABF118BF21A50038160A /* Foundation.framework */; };
+		17CEABF418BF21A50038160A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17CEABF318BF21A50038160A /* CoreGraphics.framework */; };
+		17CEABF618BF21A50038160A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17CEABF518BF21A50038160A /* UIKit.framework */; };
+		17CEABFC18BF21A50038160A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17CEABFA18BF21A50038160A /* InfoPlist.strings */; };
+		17CEABFE18BF21A50038160A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CEABFD18BF21A50038160A /* main.m */; };
+		17CEAC0218BF21A50038160A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CEAC0118BF21A50038160A /* AppDelegate.m */; };
+		17CEAC0418BF21A50038160A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CEAC0318BF21A50038160A /* Images.xcassets */; };
+		17CEAC0B18BF21A50038160A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17CEAC0A18BF21A50038160A /* XCTest.framework */; };
+		17CEAC0C18BF21A50038160A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17CEABF118BF21A50038160A /* Foundation.framework */; };
+		17CEAC0D18BF21A50038160A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17CEABF518BF21A50038160A /* UIKit.framework */; };
+		17CEAC1518BF21A50038160A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17CEAC1318BF21A50038160A /* InfoPlist.strings */; };
+		17CEAC1718BF21A50038160A /* UITabBarController_UI_12_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CEAC1618BF21A50038160A /* UITabBarController_UI_12_Tests.m */; };
+		17CEAC2218BF21E40038160A /* RedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CEAC2118BF21E40038160A /* RedViewController.m */; };
+		17CEAC2518BF21EF0038160A /* OrangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CEAC2418BF21EF0038160A /* OrangeViewController.m */; };
+		17CEAC2818BF21F60038160A /* YellowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CEAC2718BF21F60038160A /* YellowViewController.m */; };
+		17CEAC2B18BF21FC0038160A /* CyanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CEAC2A18BF21FC0038160A /* CyanViewController.m */; };
+		17CEAC2E18BF221A0038160A /* BlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CEAC2D18BF221A0038160A /* BlueViewController.m */; };
+		17CEAC3418BF23680038160A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CEAC3318BF23680038160A /* MainViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17CEAC0E18BF21A50038160A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17CEABE618BF21A50038160A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17CEABED18BF21A50038160A;
+			remoteInfo = "UITabBarController(UI-12)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1726685318C01AE80099647E /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		1726685418C01AE80099647E /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		1726685518C01AE80099647E /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
+		17CEABEE18BF21A50038160A /* UITabBarController(UI-12).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UITabBarController(UI-12).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17CEABF118BF21A50038160A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		17CEABF318BF21A50038160A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		17CEABF518BF21A50038160A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		17CEABF918BF21A50038160A /* UITabBarController(UI-12)-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UITabBarController(UI-12)-Info.plist"; sourceTree = "<group>"; };
+		17CEABFB18BF21A50038160A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		17CEABFD18BF21A50038160A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17CEABFF18BF21A50038160A /* UITabBarController(UI-12)-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController(UI-12)-Prefix.pch"; sourceTree = "<group>"; };
+		17CEAC0018BF21A50038160A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		17CEAC0118BF21A50038160A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		17CEAC0318BF21A50038160A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		17CEAC0918BF21A50038160A /* UITabBarController(UI-12)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UITabBarController(UI-12)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17CEAC0A18BF21A50038160A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		17CEAC1218BF21A50038160A /* UITabBarController(UI-12)Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UITabBarController(UI-12)Tests-Info.plist"; sourceTree = "<group>"; };
+		17CEAC1418BF21A50038160A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		17CEAC1618BF21A50038160A /* UITabBarController_UI_12_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITabBarController_UI_12_Tests.m; sourceTree = "<group>"; };
+		17CEAC2018BF21E40038160A /* RedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedViewController.h; sourceTree = "<group>"; };
+		17CEAC2118BF21E40038160A /* RedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedViewController.m; sourceTree = "<group>"; };
+		17CEAC2318BF21EF0038160A /* OrangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrangeViewController.h; sourceTree = "<group>"; };
+		17CEAC2418BF21EF0038160A /* OrangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrangeViewController.m; sourceTree = "<group>"; };
+		17CEAC2618BF21F60038160A /* YellowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YellowViewController.h; sourceTree = "<group>"; };
+		17CEAC2718BF21F60038160A /* YellowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YellowViewController.m; sourceTree = "<group>"; };
+		17CEAC2918BF21FC0038160A /* CyanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyanViewController.h; sourceTree = "<group>"; };
+		17CEAC2A18BF21FC0038160A /* CyanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CyanViewController.m; sourceTree = "<group>"; };
+		17CEAC2C18BF221A0038160A /* BlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueViewController.h; sourceTree = "<group>"; };
+		17CEAC2D18BF221A0038160A /* BlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueViewController.m; sourceTree = "<group>"; };
+		17CEAC3218BF23680038160A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
+		17CEAC3318BF23680038160A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17CEABEB18BF21A50038160A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17CEABF418BF21A50038160A /* CoreGraphics.framework in Frameworks */,
+				17CEABF618BF21A50038160A /* UIKit.framework in Frameworks */,
+				17CEABF218BF21A50038160A /* Foundation.framework in Frameworks */,
+				1726685618C01AE80099647E /* libWeiboSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17CEAC0618BF21A50038160A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17CEAC0B18BF21A50038160A /* XCTest.framework in Frameworks */,
+				17CEAC0D18BF21A50038160A /* UIKit.framework in Frameworks */,
+				17CEAC0C18BF21A50038160A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1726685118C01AC10099647E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1726685218C01AE80099647E /* libWeiboSDK */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		1726685218C01AE80099647E /* libWeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				1726685318C01AE80099647E /* libWeiboSDK.a */,
+				1726685418C01AE80099647E /* WeiboSDK.bundle */,
+				1726685518C01AE80099647E /* WeiboSDK.h */,
+			);
+			path = libWeiboSDK;
+			sourceTree = "<group>";
+		};
+		17CEABE518BF21A50038160A = {
+			isa = PBXGroup;
+			children = (
+				17CEABF718BF21A50038160A /* UITabBarController(UI-12) */,
+				17CEAC1018BF21A50038160A /* UITabBarController(UI-12)Tests */,
+				17CEABF018BF21A50038160A /* Frameworks */,
+				17CEABEF18BF21A50038160A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17CEABEF18BF21A50038160A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17CEABEE18BF21A50038160A /* UITabBarController(UI-12).app */,
+				17CEAC0918BF21A50038160A /* UITabBarController(UI-12)Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17CEABF018BF21A50038160A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17CEABF118BF21A50038160A /* Foundation.framework */,
+				17CEABF318BF21A50038160A /* CoreGraphics.framework */,
+				17CEABF518BF21A50038160A /* UIKit.framework */,
+				17CEAC0A18BF21A50038160A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17CEABF718BF21A50038160A /* UITabBarController(UI-12) */ = {
+			isa = PBXGroup;
+			children = (
+				1726685118C01AC10099647E /* Utils */,
+				17CEAC0018BF21A50038160A /* AppDelegate.h */,
+				17CEAC0118BF21A50038160A /* AppDelegate.m */,
+				17CEAC3218BF23680038160A /* MainViewController.h */,
+				17CEAC3318BF23680038160A /* MainViewController.m */,
+				17CEAC2018BF21E40038160A /* RedViewController.h */,
+				17CEAC2118BF21E40038160A /* RedViewController.m */,
+				17CEAC2C18BF221A0038160A /* BlueViewController.h */,
+				17CEAC2D18BF221A0038160A /* BlueViewController.m */,
+				17CEAC2318BF21EF0038160A /* OrangeViewController.h */,
+				17CEAC2418BF21EF0038160A /* OrangeViewController.m */,
+				17CEAC2618BF21F60038160A /* YellowViewController.h */,
+				17CEAC2718BF21F60038160A /* YellowViewController.m */,
+				17CEAC2918BF21FC0038160A /* CyanViewController.h */,
+				17CEAC2A18BF21FC0038160A /* CyanViewController.m */,
+				17CEAC0318BF21A50038160A /* Images.xcassets */,
+				17CEABF818BF21A50038160A /* Supporting Files */,
+			);
+			path = "UITabBarController(UI-12)";
+			sourceTree = "<group>";
+		};
+		17CEABF818BF21A50038160A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17CEABF918BF21A50038160A /* UITabBarController(UI-12)-Info.plist */,
+				17CEABFA18BF21A50038160A /* InfoPlist.strings */,
+				17CEABFD18BF21A50038160A /* main.m */,
+				17CEABFF18BF21A50038160A /* UITabBarController(UI-12)-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17CEAC1018BF21A50038160A /* UITabBarController(UI-12)Tests */ = {
+			isa = PBXGroup;
+			children = (
+				17CEAC1618BF21A50038160A /* UITabBarController_UI_12_Tests.m */,
+				17CEAC1118BF21A50038160A /* Supporting Files */,
+			);
+			path = "UITabBarController(UI-12)Tests";
+			sourceTree = "<group>";
+		};
+		17CEAC1118BF21A50038160A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17CEAC1218BF21A50038160A /* UITabBarController(UI-12)Tests-Info.plist */,
+				17CEAC1318BF21A50038160A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17CEABED18BF21A50038160A /* UITabBarController(UI-12) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17CEAC1A18BF21A50038160A /* Build configuration list for PBXNativeTarget "UITabBarController(UI-12)" */;
+			buildPhases = (
+				17CEABEA18BF21A50038160A /* Sources */,
+				17CEABEB18BF21A50038160A /* Frameworks */,
+				17CEABEC18BF21A50038160A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UITabBarController(UI-12)";
+			productName = "UITabBarController(UI-12)";
+			productReference = 17CEABEE18BF21A50038160A /* UITabBarController(UI-12).app */;
+			productType = "com.apple.product-type.application";
+		};
+		17CEAC0818BF21A50038160A /* UITabBarController(UI-12)Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17CEAC1D18BF21A50038160A /* Build configuration list for PBXNativeTarget "UITabBarController(UI-12)Tests" */;
+			buildPhases = (
+				17CEAC0518BF21A50038160A /* Sources */,
+				17CEAC0618BF21A50038160A /* Frameworks */,
+				17CEAC0718BF21A50038160A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17CEAC0F18BF21A50038160A /* PBXTargetDependency */,
+			);
+			name = "UITabBarController(UI-12)Tests";
+			productName = "UITabBarController(UI-12)Tests";
+			productReference = 17CEAC0918BF21A50038160A /* UITabBarController(UI-12)Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17CEABE618BF21A50038160A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "范林松";
+				TargetAttributes = {
+					17CEAC0818BF21A50038160A = {
+						TestTargetID = 17CEABED18BF21A50038160A;
+					};
+				};
+			};
+			buildConfigurationList = 17CEABE918BF21A50038160A /* Build configuration list for PBXProject "UITabBarController(UI-12)" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 17CEABE518BF21A50038160A;
+			productRefGroup = 17CEABEF18BF21A50038160A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17CEABED18BF21A50038160A /* UITabBarController(UI-12) */,
+				17CEAC0818BF21A50038160A /* UITabBarController(UI-12)Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17CEABEC18BF21A50038160A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17CEABFC18BF21A50038160A /* InfoPlist.strings in Resources */,
+				17CEAC0418BF21A50038160A /* Images.xcassets in Resources */,
+				1726685718C01AE80099647E /* WeiboSDK.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17CEAC0718BF21A50038160A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17CEAC1518BF21A50038160A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17CEABEA18BF21A50038160A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17CEAC2518BF21EF0038160A /* OrangeViewController.m in Sources */,
+				17CEAC2818BF21F60038160A /* YellowViewController.m in Sources */,
+				17CEAC0218BF21A50038160A /* AppDelegate.m in Sources */,
+				17CEAC3418BF23680038160A /* MainViewController.m in Sources */,
+				17CEAC2218BF21E40038160A /* RedViewController.m in Sources */,
+				17CEAC2E18BF221A0038160A /* BlueViewController.m in Sources */,
+				17CEABFE18BF21A50038160A /* main.m in Sources */,
+				17CEAC2B18BF21FC0038160A /* CyanViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17CEAC0518BF21A50038160A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17CEAC1718BF21A50038160A /* UITabBarController_UI_12_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17CEAC0F18BF21A50038160A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17CEABED18BF21A50038160A /* UITabBarController(UI-12) */;
+			targetProxy = 17CEAC0E18BF21A50038160A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17CEABFA18BF21A50038160A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17CEABFB18BF21A50038160A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		17CEAC1318BF21A50038160A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17CEAC1418BF21A50038160A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17CEAC1818BF21A50038160A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		17CEAC1918BF21A50038160A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17CEAC1B18BF21A50038160A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UITabBarController(UI-12)/UITabBarController(UI-12)-Prefix.pch";
+				INFOPLIST_FILE = "UITabBarController(UI-12)/UITabBarController(UI-12)-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/fanlinsong/百度云同步盘/XcodeFiles/githubFiles/OCUserInterfaceDeveloper/UITabBarController(UI-12)/UITabBarController(UI-12)/libWeiboSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		17CEAC1C18BF21A50038160A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UITabBarController(UI-12)/UITabBarController(UI-12)-Prefix.pch";
+				INFOPLIST_FILE = "UITabBarController(UI-12)/UITabBarController(UI-12)-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/fanlinsong/百度云同步盘/XcodeFiles/githubFiles/OCUserInterfaceDeveloper/UITabBarController(UI-12)/UITabBarController(UI-12)/libWeiboSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		17CEAC1E18BF21A50038160A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UITabBarController(UI-12).app/UITabBarController(UI-12)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UITabBarController(UI-12)/UITabBarController(UI-12)-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "UITabBarController(UI-12)Tests/UITabBarController(UI-12)Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		17CEAC1F18BF21A50038160A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UITabBarController(UI-12).app/UITabBarController(UI-12)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UITabBarController(UI-12)/UITabBarController(UI-12)-Prefix.pch";
+				INFOPLIST_FILE = "UITabBarController(UI-12)Tests/UITabBarController(UI-12)Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17CEABE918BF21A50038160A /* Build configuration list for PBXProject "UITabBarController(UI-12)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17CEAC1818BF21A50038160A /* Debug */,
+				17CEAC1918BF21A50038160A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17CEAC1A18BF21A50038160A /* Build configuration list for PBXNativeTarget "UITabBarController(UI-12)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17CEAC1B18BF21A50038160A /* Debug */,
+				17CEAC1C18BF21A50038160A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17CEAC1D18BF21A50038160A /* Build configuration list for PBXNativeTarget "UITabBarController(UI-12)Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17CEAC1E18BF21A50038160A /* Debug */,
+				17CEAC1F18BF21A50038160A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17CEABE618BF21A50038160A /* Project object */;
+}

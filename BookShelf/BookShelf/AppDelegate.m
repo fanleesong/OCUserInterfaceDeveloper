@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BookShelfViewController.h"
+#import "UserGuideViewController.h"
 
 @implementation AppDelegate
 -(void)dealloc{
@@ -31,6 +32,17 @@
     self.window.rootViewController = rootNC;
     [bookShelf release],bookShelf = nil;
     [rootNC release],rootNC = nil;
+    
+    //TODO:
+    
+    NSUserDefaults *userdefault = [NSUserDefaults standardUserDefaults];
+    if (![userdefault boolForKey:@"isFirstLaunch"]) {
+        UserGuideViewController *userGuide = [[UserGuideViewController alloc] init];
+        [self.window.rootViewController.view addSubview:userGuide.view];
+        [userdefault setBool:YES forKey:@"isFirstLaunch"];
+        [userdefault synchronize];
+    }
+    
     
     return YES;
 }

@@ -1,0 +1,25 @@
+{
+    "students":
+    [
+        {
+            "name":"张三",
+            "telephoneNumber":"1234567891",
+            "gender":"男"
+        },
+        {
+            "name":"李四",
+            "telephoneNumber":"1734995333",
+            "gender":"男"
+        },
+        {
+            "name":"吴京",
+            "telephoneNumber":"78788763832",
+            "gender":"女"
+        },
+        {
+            "name":"贾静雯",
+            "telephoneNumber":"123456789",
+            "gender":"女"
+        }
+    ]
+}

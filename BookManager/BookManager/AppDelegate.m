@@ -7,8 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import "BookShelfViewController.h"
 
 @implementation AppDelegate
+
+-(void)dealloc{
+
+    [_window release];
+    [super dealloc];
+
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -16,6 +24,15 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    BookShelfViewController *bookmanager = [[BookShelfViewController alloc] initWithStyle:UITableViewStylePlain];
+    
+    UINavigationController *rootNC = [[UINavigationController alloc] initWithRootViewController:bookmanager];
+    self.window.rootViewController = rootNC;
+    [bookmanager release],bookmanager = nil;
+    [rootNC release],rootNC = nil;
+    
+    
     return YES;
 }
 

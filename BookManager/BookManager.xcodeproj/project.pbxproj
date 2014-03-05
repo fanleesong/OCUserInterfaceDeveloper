@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17258C4A18BC6E6B004EF28A /* BookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17258C4918BC6E6B004EF28A /* BookDetailViewController.m */; };
+		17313EA018BB6860003C243F /* bookSys.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 17313E9F18BB6860003C243F /* bookSys.sqlite */; };
+		17313EA518BB6906003C243F /* BookTypeDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 17313EA418BB6906003C243F /* BookTypeDao.m */; };
+		17313EA818BB6916003C243F /* BaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 17313EA718BB6916003C243F /* BaseDao.m */; };
+		17313EAA18BB6930003C243F /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 17313EA918BB6930003C243F /* libsqlite3.0.dylib */; };
+		17313EAD18BB7141003C243F /* AddBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17313EAC18BB7141003C243F /* AddBooksViewController.m */; };
+		17313EAF18BB7A1F003C243F /* hihi.png in Resources */ = {isa = PBXBuildFile; fileRef = 17313EAE18BB7A1F003C243F /* hihi.png */; };
+		1735697318BC44E50042115A /* TrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1735697218BC44E50042115A /* TrashViewController.m */; };
+		1735697618BC45370042115A /* BookShelfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1735697418BC45370042115A /* BookShelfViewController.m */; };
 		17EB87AB18BB396700DF4D46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17EB87AA18BB396700DF4D46 /* Foundation.framework */; };
 		17EB87AD18BB396700DF4D46 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17EB87AC18BB396700DF4D46 /* CoreGraphics.framework */; };
 		17EB87AF18BB396700DF4D46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17EB87AE18BB396700DF4D46 /* UIKit.framework */; };
@@ -19,6 +28,17 @@
 		17EB87C618BB396700DF4D46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17EB87AE18BB396700DF4D46 /* UIKit.framework */; };
 		17EB87CE18BB396700DF4D46 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17EB87CC18BB396700DF4D46 /* InfoPlist.strings */; };
 		17EB87D018BB396700DF4D46 /* BookManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EB87CF18BB396700DF4D46 /* BookManagerTests.m */; };
+		17EB87E118BB3A5F00DF4D46 /* Books.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EB87E018BB3A5F00DF4D46 /* Books.m */; };
+		17EB87E418BB3A7E00DF4D46 /* BookType.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EB87E318BB3A7E00DF4D46 /* BookType.m */; };
+		17EB87E718BB3D6800DF4D46 /* BookShelf.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EB87E618BB3D6800DF4D46 /* BookShelf.m */; };
+		17EB87EA18BB465B00DF4D46 /* BookDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EB87E918BB465B00DF4D46 /* BookDao.m */; };
+		17EB87F918BB481E00DF4D46 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EB87F018BB481E00DF4D46 /* FMDatabase.m */; };
+		17EB87FA18BB481E00DF4D46 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EB87F218BB481E00DF4D46 /* FMDatabaseAdditions.m */; };
+		17EB87FB18BB481E00DF4D46 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EB87F418BB481E00DF4D46 /* FMDatabasePool.m */; };
+		17EB87FC18BB481E00DF4D46 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EB87F618BB481E00DF4D46 /* FMDatabaseQueue.m */; };
+		17EB87FD18BB481E00DF4D46 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EB87F818BB481E00DF4D46 /* FMResultSet.m */; };
+		17EB880018BB482B00DF4D46 /* SDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EB87FF18BB482B00DF4D46 /* SDBManager.m */; };
+		17EB880618BB497E00DF4D46 /* BookTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EB880518BB497E00DF4D46 /* BookTypeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +52,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17258C4818BC6E6B004EF28A /* BookDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailViewController.h; sourceTree = "<group>"; };
+		17258C4918BC6E6B004EF28A /* BookDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailViewController.m; sourceTree = "<group>"; };
+		17313E9F18BB6860003C243F /* bookSys.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = bookSys.sqlite; sourceTree = "<group>"; };
+		17313EA318BB6906003C243F /* BookTypeDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookTypeDao.h; sourceTree = "<group>"; };
+		17313EA418BB6906003C243F /* BookTypeDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookTypeDao.m; sourceTree = "<group>"; };
+		17313EA618BB6916003C243F /* BaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDao.h; sourceTree = "<group>"; };
+		17313EA718BB6916003C243F /* BaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDao.m; sourceTree = "<group>"; };
+		17313EA918BB6930003C243F /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		17313EAB18BB7141003C243F /* AddBooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBooksViewController.h; sourceTree = "<group>"; };
+		17313EAC18BB7141003C243F /* AddBooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBooksViewController.m; sourceTree = "<group>"; };
+		17313EAE18BB7A1F003C243F /* hihi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hihi.png; sourceTree = "<group>"; };
+		1735697118BC44E50042115A /* TrashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrashViewController.h; path = ../TrashViewController.h; sourceTree = "<group>"; };
+		1735697218BC44E50042115A /* TrashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrashViewController.m; path = ../TrashViewController.m; sourceTree = "<group>"; };
+		1735697418BC45370042115A /* BookShelfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfViewController.m; sourceTree = "<group>"; };
+		1735697518BC45370042115A /* BookShelfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfViewController.h; sourceTree = "<group>"; };
 		17EB87A718BB396700DF4D46 /* BookManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17EB87AA18BB396700DF4D46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		17EB87AC18BB396700DF4D46 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +83,28 @@
 		17EB87CB18BB396700DF4D46 /* BookManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BookManagerTests-Info.plist"; sourceTree = "<group>"; };
 		17EB87CD18BB396700DF4D46 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17EB87CF18BB396700DF4D46 /* BookManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookManagerTests.m; sourceTree = "<group>"; };
+		17EB87DF18BB3A5F00DF4D46 /* Books.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Books.h; sourceTree = "<group>"; };
+		17EB87E018BB3A5F00DF4D46 /* Books.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Books.m; sourceTree = "<group>"; };
+		17EB87E218BB3A7E00DF4D46 /* BookType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookType.h; sourceTree = "<group>"; };
+		17EB87E318BB3A7E00DF4D46 /* BookType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookType.m; sourceTree = "<group>"; };
+		17EB87E518BB3D6800DF4D46 /* BookShelf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelf.h; sourceTree = "<group>"; };
+		17EB87E618BB3D6800DF4D46 /* BookShelf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelf.m; sourceTree = "<group>"; };
+		17EB87E818BB465B00DF4D46 /* BookDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDao.h; sourceTree = "<group>"; };
+		17EB87E918BB465B00DF4D46 /* BookDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDao.m; sourceTree = "<group>"; };
+		17EB87EF18BB481E00DF4D46 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		17EB87F018BB481E00DF4D46 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		17EB87F118BB481E00DF4D46 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		17EB87F218BB481E00DF4D46 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		17EB87F318BB481E00DF4D46 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		17EB87F418BB481E00DF4D46 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		17EB87F518BB481E00DF4D46 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		17EB87F618BB481E00DF4D46 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		17EB87F718BB481E00DF4D46 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		17EB87F818BB481E00DF4D46 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		17EB87FE18BB482B00DF4D46 /* SDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBManager.h; sourceTree = "<group>"; };
+		17EB87FF18BB482B00DF4D46 /* SDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBManager.m; sourceTree = "<group>"; };
+		17EB880418BB497E00DF4D46 /* BookTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BookTypeViewController.h; path = ../BookTypeViewController.h; sourceTree = "<group>"; };
+		17EB880518BB497E00DF4D46 /* BookTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookTypeViewController.m; path = ../BookTypeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17313EAA18BB6930003C243F /* libsqlite3.0.dylib in Frameworks */,
 				17EB87AD18BB396700DF4D46 /* CoreGraphics.framework in Frameworks */,
 				17EB87AF18BB396700DF4D46 /* UIKit.framework in Frameworks */,
 				17EB87AB18BB396700DF4D46 /* Foundation.framework in Frameworks */,
@@ -74,6 +132,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17313EA118BB6873003C243F /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				17EB87DF18BB3A5F00DF4D46 /* Books.h */,
+				17EB87E018BB3A5F00DF4D46 /* Books.m */,
+				17EB87E218BB3A7E00DF4D46 /* BookType.h */,
+				17EB87E318BB3A7E00DF4D46 /* BookType.m */,
+				17EB87E518BB3D6800DF4D46 /* BookShelf.h */,
+				17EB87E618BB3D6800DF4D46 /* BookShelf.m */,
+			);
+			name = entity;
+			sourceTree = "<group>";
+		};
+		17313EA218BB6892003C243F /* dao */ = {
+			isa = PBXGroup;
+			children = (
+				17EB87E818BB465B00DF4D46 /* BookDao.h */,
+				17EB87E918BB465B00DF4D46 /* BookDao.m */,
+				17313EA318BB6906003C243F /* BookTypeDao.h */,
+				17313EA418BB6906003C243F /* BookTypeDao.m */,
+				17313EA618BB6916003C243F /* BaseDao.h */,
+				17313EA718BB6916003C243F /* BaseDao.m */,
+			);
+			name = dao;
+			sourceTree = "<group>";
+		};
 		17EB879E18BB396700DF4D46 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +180,7 @@
 		17EB87A918BB396700DF4D46 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				17313EA918BB6930003C243F /* libsqlite3.0.dylib */,
 				17EB87AA18BB396700DF4D46 /* Foundation.framework */,
 				17EB87AC18BB396700DF4D46 /* CoreGraphics.framework */,
 				17EB87AE18BB396700DF4D46 /* UIKit.framework */,
@@ -107,9 +192,24 @@
 		17EB87B018BB396700DF4D46 /* BookManager */ = {
 			isa = PBXGroup;
 			children = (
+				17313EAE18BB7A1F003C243F /* hihi.png */,
 				17EB87B918BB396700DF4D46 /* AppDelegate.h */,
 				17EB87BA18BB396700DF4D46 /* AppDelegate.m */,
+				1735697118BC44E50042115A /* TrashViewController.h */,
+				1735697218BC44E50042115A /* TrashViewController.m */,
+				1735697518BC45370042115A /* BookShelfViewController.h */,
+				1735697418BC45370042115A /* BookShelfViewController.m */,
+				17258C4818BC6E6B004EF28A /* BookDetailViewController.h */,
+				17258C4918BC6E6B004EF28A /* BookDetailViewController.m */,
+				17313EAB18BB7141003C243F /* AddBooksViewController.h */,
+				17313EAC18BB7141003C243F /* AddBooksViewController.m */,
+				17EB880418BB497E00DF4D46 /* BookTypeViewController.h */,
+				17EB880518BB497E00DF4D46 /* BookTypeViewController.m */,
+				17313EA218BB6892003C243F /* dao */,
+				17313EA118BB6873003C243F /* entity */,
+				17313E9F18BB6860003C243F /* bookSys.sqlite */,
 				17EB87BC18BB396700DF4D46 /* Images.xcassets */,
+				17EB87EE18BB481E00DF4D46 /* FMDB */,
 				17EB87B118BB396700DF4D46 /* Supporting Files */,
 			);
 			path = BookManager;
@@ -142,6 +242,25 @@
 				17EB87CC18BB396700DF4D46 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17EB87EE18BB481E00DF4D46 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				17EB87FE18BB482B00DF4D46 /* SDBManager.h */,
+				17EB87FF18BB482B00DF4D46 /* SDBManager.m */,
+				17EB87EF18BB481E00DF4D46 /* FMDatabase.h */,
+				17EB87F018BB481E00DF4D46 /* FMDatabase.m */,
+				17EB87F118BB481E00DF4D46 /* FMDatabaseAdditions.h */,
+				17EB87F218BB481E00DF4D46 /* FMDatabaseAdditions.m */,
+				17EB87F318BB481E00DF4D46 /* FMDatabasePool.h */,
+				17EB87F418BB481E00DF4D46 /* FMDatabasePool.m */,
+				17EB87F518BB481E00DF4D46 /* FMDatabaseQueue.h */,
+				17EB87F618BB481E00DF4D46 /* FMDatabaseQueue.m */,
+				17EB87F718BB481E00DF4D46 /* FMResultSet.h */,
+				17EB87F818BB481E00DF4D46 /* FMResultSet.m */,
+			);
+			path = FMDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +338,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17313EAF18BB7A1F003C243F /* hihi.png in Resources */,
 				17EB87B518BB396700DF4D46 /* InfoPlist.strings in Resources */,
+				17313EA018BB6860003C243F /* bookSys.sqlite in Resources */,
 				17EB87BD18BB396700DF4D46 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,8 +360,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17313EAD18BB7141003C243F /* AddBooksViewController.m in Sources */,
+				17EB87E418BB3A7E00DF4D46 /* BookType.m in Sources */,
+				17313EA818BB6916003C243F /* BaseDao.m in Sources */,
+				17EB87FB18BB481E00DF4D46 /* FMDatabasePool.m in Sources */,
+				17258C4A18BC6E6B004EF28A /* BookDetailViewController.m in Sources */,
+				17EB87FD18BB481E00DF4D46 /* FMResultSet.m in Sources */,
+				17EB880618BB497E00DF4D46 /* BookTypeViewController.m in Sources */,
 				17EB87BB18BB396700DF4D46 /* AppDelegate.m in Sources */,
+				17EB87E118BB3A5F00DF4D46 /* Books.m in Sources */,
+				17EB87FC18BB481E00DF4D46 /* FMDatabaseQueue.m in Sources */,
+				17EB87F918BB481E00DF4D46 /* FMDatabase.m in Sources */,
+				1735697318BC44E50042115A /* TrashViewController.m in Sources */,
+				17313EA518BB6906003C243F /* BookTypeDao.m in Sources */,
+				17EB87EA18BB465B00DF4D46 /* BookDao.m in Sources */,
+				17EB880018BB482B00DF4D46 /* SDBManager.m in Sources */,
+				1735697618BC45370042115A /* BookShelfViewController.m in Sources */,
+				17EB87E718BB3D6800DF4D46 /* BookShelf.m in Sources */,
 				17EB87B718BB396700DF4D46 /* main.m in Sources */,
+				17EB87FA18BB481E00DF4D46 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +428,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -329,7 +467,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -441,6 +579,7 @@
 				17EB87D518BB396700DF4D46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17EB87D618BB396700DF4D46 /* Build configuration list for PBXNativeTarget "BookManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +588,7 @@
 				17EB87D818BB396700DF4D46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
